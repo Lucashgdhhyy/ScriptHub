@@ -1,8 +1,8 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "Kapi",
-  SubTitle = " V0.8",
+  Title = "Kapi Script Hub [Trial]",
+  SubTitle = " Trial",
   SaveFolder = "Kapi Script Hub.lua"
 })
 
