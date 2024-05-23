@@ -1,10 +1,8 @@
-game.StarterGui:SetCore("SendNotification", {Title = "Loading", Text = "Status Work", Duration = 5})
-
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
 
 local Window = redzlib:MakeWindow({
   Title = "Kapi",
-  SubTitle = "by kapi",
+  SubTitle = " V0.8",
   SaveFolder = "Kapi Script Hub.lua"
 })
 
@@ -29,5 +27,13 @@ local Button = Tab:AddButton({"W-Azure", function()
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
   -- Button Function
 end})
+
+local Tab = Window:MakeTab({Title = "Cmds", Icon = ""})
+
+local Button = Tab:AddButton({"Infinity Yield", function()         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  -- Button Function
+end})
+
+
 
 local Tab = Window:MakeTab({Title = "Comming Soon", Icon = "Home"})
