@@ -36,4 +36,4 @@ end})
 
 
 
-local Tab = Window:MakeTab({Title = "Comming Soon", Icon = "Home"})
+local Tab = Window:MakeTab({Title = "Comming Soon", Icon = ""})
