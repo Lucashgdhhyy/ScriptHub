@@ -1,39 +1,64 @@
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Kapi HubV0.3", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Kapi Script Hub"})
 
-local Window = redzlib:MakeWindow({
-  Title = "Kapi Script Hub [Trial]",
-  SubTitle = " Trial",
-  SaveFolder = "Kapi Script Hub.lua"
+local Tab = Window:MakeTab({
+	Name = "Blox Fruit",
+	Icon = "",
+	PremiumOnly = false
 })
 
-local Tab = Window:MakeTab({Title = "Blox Fruit", Icon = "Home"})
+OrionLib:MakeNotification({
+	Name = "Kapi Script Hub",
+	Content = "This are beta version",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
 
-local Button = Tab:AddButton({"Redz Hub(close Ui)", function()        
-loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
-  -- Button Function
-end})
+Tab:AddButton({
+	Name = "Redz Hub",
+	Callback = function()
+      		print("button pressed")                 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+  	end    
+})
 
-local Button = Tab:AddButton({"Domadic Hub", function()           
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
-  -- Button Function
-end})
+Tab:AddButton({
+	Name = "Domadic Hub",
+	Callback = function()
+      		print("button pressed")                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
 
-local Button = Tab:AddButton({"Xero Hub", function()           
-loadstring(game:HttpGet("https://raw.githubusercontent.com/verudous/Xero-Hub/main/main.lua"))()
-  -- Button Function
-end})
+  	end    
+})
 
-local Button = Tab:AddButton({"W-Azure", function()    
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
-  -- Button Function
-end})
+Tab:AddButton({
+	Name = "Xero Hub",
+	Callback = function()
+      		print("button pressed")           loadstring(game:HttpGet("https://raw.githubusercontent.com/verudous/Xero-Hub/main/main.lua"))()
+  	end    
+})
 
-local Tab = Window:MakeTab({Title = "Cmds", Icon = ""})
+Tab:AddButton({
+	Name = "W-Azure",
+	Callback = function()
+      		print("button pressed")                  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua")
+  	end    
+})
 
-local Button = Tab:AddButton({"Infinity Yield", function()         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-  -- Button Function
-end})
+local Tab = Window:MakeTab({
+	Name = "CMDS",
+	Icon = "",
+	PremiumOnly = false
+})
 
+Tab:AddButton({
+	Name = "Infinity Yield",
+	Callback = function()
+      		print("button pressed")               loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
 
-
-local Tab = Window:MakeTab({Title = "Comming Soon", Icon = ""})
+Tab:AddButton({
+	Name = "Simple Spy",
+	Callback = function()
+      		print("button pressed") loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))(
+  	end    
+})
