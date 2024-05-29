@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Kapi Hub V0.3", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Kapi Script Hub"})
+local Window = OrionLib:MakeWindow({Name = "Kapi Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Kapi Script Hub"})
 
 local Tab = Window:MakeTab({
 	Name = "Blox Fruit",
@@ -18,6 +18,13 @@ Tab:AddButton({
 	Name = "Redz Hub",
 	Callback = function()
       		print("button pressed")                 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Matsune V2 (function on web version)",
+	Callback = function()
+      		print("button pressed")                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Yuri/main/Winterhub_V2.lua"))()
   	end    
 })
 
